@@ -984,6 +984,81 @@
         .delay-3 { transition-delay: 0.3s; }
         .delay-4 { transition-delay: 0.4s; }
 
+        /* MOBILE RESPONSIVE FIXES */
+        html, body {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        @media (max-width: 768px) {
+            /* 10. All grid and flex containers */
+            .any-grid-or-flex-container, .hero-btns, .about-grid, .programs-grid, .trainers-grid, .pricing-grid, .test-grid, .contact-container, .footer-grid {
+                flex-direction: column;
+                grid-template-columns: 1fr;
+                width: 100%;
+            }
+
+            /* 2. Hero Section */
+            .hero {
+                padding-left: 20px;
+                padding-right: 20px;
+                width: 100%;
+            }
+            .hero-content {
+                max-width: 100%;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero-btns {
+                flex-direction: column;
+                width: 100%;
+            }
+            .hero-btns .btn {
+                width: 100%;
+            }
+            
+            /* 3. All Sections */
+            section {
+                overflow-x: hidden;
+                padding: 40px 20px !important;
+            }
+            .container {
+                width: 100%;
+                min-width: 0;
+                padding: 0 !important;
+            }
+            
+            /* 4. Navbar */
+            .navbar {
+                width: 100%;
+                overflow-x: hidden;
+            }
+            .nav-container {
+                width: 100%;
+            }
+            
+            /* 5. Stats Bar */
+            .stats-grid {
+                grid-template-columns: 1fr 1fr !important;
+                width: 100%;
+            }
+            .stat-item {
+                width: 100%;
+            }
+            
+            /* 6, 7, 8. Programs, Pricing, Trainers Sections */
+            .program-card, .price-card, .trainer-card, .test-card {
+                width: 100%;
+            }
+            
+            /* 9. Contact Section */
+            .contact-form, .contact-info {
+                width: 100%;
+                padding: 20px !important;
+            }
+        }
     </style>
 </head>
 <body>
