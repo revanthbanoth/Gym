@@ -1,0 +1,17 @@
+{
+  "name": "gym",
+  "version": "1.0.0",
+  "description": "A complete, modern, and professional gym website designed as a single HTML file. This project is built to provide a premium digital experience with dynamic animations, sleek typography, and a dark, energetic aesthetic.",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
