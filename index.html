@@ -1070,7 +1070,6 @@
             /* 4. Navbar */
             .navbar {
                 width: 100%;
-                overflow-x: hidden;
             }
             .nav-container {
                 width: 100%;
@@ -1142,7 +1141,6 @@
     <!-- Top Banner -->
     <div id="top-banner" class="top-banner">
         <p>⚡ Demo Site by EasyWeb | Get your own website → <a href="https://myeasyweb.in" target="_blank" rel="noopener noreferrer">myeasyweb.in</a></p>
-        <button class="close-btn" aria-label="Close banner">&times;</button>
     </div>
 
     <!-- Navbar -->
@@ -1512,18 +1510,7 @@
     </footer>
 
     <script>
-        // Top Banner Dismiss
-        const banner = document.getElementById('top-banner');
         const navbar = document.getElementById('navbar');
-        const closeBtn = document.querySelector('.close-btn');
-
-        closeBtn.addEventListener('click', () => {
-            banner.style.transform = 'translateY(-100%)';
-            setTimeout(() => {
-                banner.style.display = 'none';
-                navbar.style.top = '0';
-            }, 300);
-        });
 
         // Navbar Scroll Effect
         window.addEventListener('scroll', () => {
