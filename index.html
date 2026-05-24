@@ -134,6 +134,12 @@
             align-items: center;
             gap: 0.5rem;
         }
+        .logo-img {
+            height: 2.2rem;
+            width: 2.2rem;
+            object-fit: contain;
+            filter: drop-shadow(0 0 5px rgba(255,107,53,0.5));
+        }
         .logo span {
             color: var(--primary);
         }
@@ -507,10 +513,22 @@
             opacity: 0.05;
         }
         .program-icon {
-            font-size: 4rem;
-            margin-bottom: 1.5rem;
-            display: inline-block;
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             transition: var(--transition);
+            background: rgba(255,107,53,0.1);
+            border-radius: 16px;
+            padding: 12px;
+        }
+        .program-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 0 10px rgba(255,107,53,0.3));
         }
         .program-card:hover .program-icon {
             transform: scale(1.1);
@@ -584,10 +602,15 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 4.5rem;
             border: 4px solid transparent;
             background-clip: padding-box;
             position: relative;
+        }
+        .trainer-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
         }
         .trainer-avatar::before {
             content: '';
@@ -1143,7 +1166,7 @@
     <!-- Navbar -->
     <nav id="navbar" class="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">💪 IronPeak<span>Fitness</span></a>
+            <a href="#" class="logo"><img src="assets/program_weight.png" alt="IronPeak Logo" class="logo-img"> IronPeak<span>Fitness</span></a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -1242,37 +1265,37 @@
                 <h2 class="section-title fade-in">Our Programs</h2>
                 <div class="programs-grid">
                     <div class="program-card fade-in">
-                        <div class="program-icon">💪</div>
+                        <div class="program-icon"><img src="assets/program_weight.png" alt="Weight Training"></div>
                         <h3>Weight Training</h3>
                         <p>Build muscle, increase strength, and transform your physique.</p>
                         <a href="#contact" class="program-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                     <div class="program-card fade-in delay-1">
-                        <div class="program-icon">🏃</div>
+                        <div class="program-icon"><img src="assets/program_cardio.png" alt="Cardio & HIIT"></div>
                         <h3>Cardio & HIIT</h3>
                         <p>Burn fat fast and improve endurance with high-intensity intervals.</p>
                         <a href="#contact" class="program-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                     <div class="program-card fade-in delay-2">
-                        <div class="program-icon">🧘</div>
+                        <div class="program-icon"><img src="assets/program_yoga.png" alt="Yoga & Flexibility"></div>
                         <h3>Yoga & Flexibility</h3>
                         <p>Enhance mobility, reduce stress, and find inner balance.</p>
                         <a href="#contact" class="program-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                     <div class="program-card fade-in">
-                        <div class="program-icon">🥊</div>
+                        <div class="program-icon"><img src="assets/program_boxing.png" alt="Boxing & MMA"></div>
                         <h3>Boxing & MMA</h3>
                         <p>Learn self-defense while getting an incredible full-body workout.</p>
                         <a href="#contact" class="program-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                     <div class="program-card fade-in delay-1">
-                        <div class="program-icon">🍎</div>
+                        <div class="program-icon"><img src="assets/program_nutrition.png" alt="Nutrition Coaching"></div>
                         <h3>Nutrition Coaching</h3>
                         <p>Custom meal plans to fuel your workouts and optimize results.</p>
                         <a href="#contact" class="program-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                     <div class="program-card fade-in delay-2">
-                        <div class="program-icon">🏊</div>
+                        <div class="program-icon"><img src="https://images.unsplash.com/photo-1599058945522-28d584b6f4ff?q=80&w=200&auto=format&fit=crop" style="border-radius: 8px; object-fit: cover;" alt="CrossFit"></div>
                         <h3>CrossFit</h3>
                         <p>Constantly varied functional movements performed at high intensity.</p>
                         <a href="#contact" class="program-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
@@ -1287,7 +1310,7 @@
                 <h2 class="section-title fade-in">Meet Our Trainers</h2>
                 <div class="trainers-grid">
                     <div class="trainer-card fade-in">
-                        <div class="trainer-avatar">👨‍🦱</div>
+                        <div class="trainer-avatar"><img src="https://api.dicebear.com/7.x/micah/svg?seed=Arjun&backgroundColor=ff6b35&radius=50" alt="Arjun Sharma"></div>
                         <h3>Arjun Sharma</h3>
                         <div class="trainer-role">Head Strength Coach</div>
                         <div class="trainer-exp">8 Years Exp.</div>
@@ -1297,7 +1320,7 @@
                         </div>
                     </div>
                     <div class="trainer-card fade-in delay-1">
-                        <div class="trainer-avatar">👩‍🦰</div>
+                        <div class="trainer-avatar"><img src="https://api.dicebear.com/7.x/micah/svg?seed=Priya&backgroundColor=e94560&radius=50" alt="Priya Reddy"></div>
                         <h3>Priya Reddy</h3>
                         <div class="trainer-role">Yoga & Wellness Expert</div>
                         <div class="trainer-exp">6 Years Exp.</div>
@@ -1307,7 +1330,7 @@
                         </div>
                     </div>
                     <div class="trainer-card fade-in delay-2">
-                        <div class="trainer-avatar">👨‍🦳</div>
+                        <div class="trainer-avatar"><img src="https://api.dicebear.com/7.x/micah/svg?seed=Karthik&backgroundColor=1a1a2e&radius=50" alt="Karthik Rao"></div>
                         <h3>Karthik Rao</h3>
                         <div class="trainer-role">HIIT & Cardio Specialist</div>
                         <div class="trainer-exp">5 Years Exp.</div>
@@ -1463,7 +1486,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <a href="#" class="logo">💪 IronPeak<span>Fitness</span></a>
+                    <a href="#" class="logo"><img src="assets/program_weight.png" alt="IronPeak Logo" class="logo-img"> IronPeak<span>Fitness</span></a>
                     <p>Forge your strongest self with state-of-the-art equipment, expert trainers, and a supportive community.</p>
                     <div class="footer-social">
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
